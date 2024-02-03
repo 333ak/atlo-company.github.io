@@ -52,11 +52,9 @@
     padding-right: 20px;
     /* 이미지와 텍스트 사이의 공간 */
   }
-
   /* .slogan {
     font-family: 'Pacifico', cursive;
   } */
-
   .logo {
     flex-grow: 0;
     /* 이미지 크기가 확장되지 않도록 설정 */
@@ -83,13 +81,45 @@
     display: inline-block;
     /* 박스를 내용에 맞게 크기 조정 */
   }
-
   .survey-invite a {
     color: white;
     /* 링크 텍스트 색상을 흰색으로 변경 */
     text-decoration: none;
     /* 밑줄 제거 */
   }
+
+/* Style for the new section */
+.new-section {
+  margin-top: 20px; /* Adjust as needed for spacing */
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+/* Style for the left image */
+.left-image {
+  flex-grow: 0;
+  flex-shrink: 0;
+  width: 400px; /* Adjust the width as needed */
+}
+
+/* Style for the right text */
+.right-text {
+  flex-grow: 1;
+  padding-left: 50px; /* Adjust the spacing between image and text */
+}
+
+/* Style for the right text content */
+.right-text h3 {
+  font-size: 20px; /* Adjust the font size as needed */
+  margin-bottom: 10px; /* Adjust spacing between title and text */
+}
+
+/* Style for the right text content paragraph */
+.right-text p {
+  font-size: 16px; /* Adjust the font size as needed */
+}
+
 </style>
 
 <body>
@@ -105,16 +135,13 @@
             </svg>
           </span>
         </label>
-
         <!-- Tags -->
         <!-- <a class="tag" href="/about/" style="display: inline; white-space: nowrap;">ATLO 정보</a>&nbsp;&nbsp;&nbsp; -->
         <div class="tag" style="display: inline; white-space: nowrap;">ATLO 정보</div>&nbsp;&nbsp;&nbsp;
         <div class="tag" style="display: inline; white-space: nowrap;">ATLO 소식</div>&nbsp;&nbsp;&nbsp;
         <div class="tag" style="display: inline; white-space: nowrap;">제품 소개</div>&nbsp;&nbsp;&nbsp;
-
       </nav>
     </div>
-
   </header>
   <main class="page-content" aria-label="Content">
     <div class="wrapper">
@@ -136,16 +163,24 @@
             </div>
           </li>
         </ul>
+<!-- Add a new section with an image on the left and text on the right -->
+<section class="new-section">
+  <div class="container">
+    <img src="/assets/img/atlo_logo.png" alt="Bear Robot" class="left-image">
+    <div class="right-text">
+      <h3>Who we are?</h3>
+      <p>Name: FEELIX</p>
+      <p>Age: 7</p>
+    </div>
+  </div>
+</section>
       </div>
     </div>
   </main>
   <footer class="site-footer h-card">
     <data class="u-url" href="/"></data>
-
     <div class="wrapper">
-
       <h2 class="footer-heading">ATLO</h2>
-
       <div class="footer-col-wrapper">
         <div class="footer-col footer-col-1">
           <ul class="contact-list">
@@ -153,15 +188,10 @@
             <li><a class="u-email" href="mailto:atlo@atlo.ac.kr">atlo@atlo.ac.kr</a></li>
           </ul>
         </div>
-
         <!-- <div class="footer-col footer-col-2"><ul class="social-media-list"><li><a href="https://github.com/jekyll"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#github"></use></svg> <span class="username">jekyll</span></a></li><li><a href="https://www.twitter.com/jekyllrb"><svg class="svg-icon"><use xlink:href="/assets/minima-social-icons.svg#twitter"></use></svg> <span class="username">jekyllrb</span></a></li></ul> -->
       </div>
-
     </div>
-
     </div>
-
   </footer>
 </body>
-
 </html>
